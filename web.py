@@ -2,7 +2,7 @@ import http.server
 import os
 
 
-PORT = int(os.environ.get('SERVE_PORT', None)) or 8000
+PORT = 8080
 
 
 class SimpleHandler(http.server.BaseHTTPRequestHandler):

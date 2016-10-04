@@ -1,6 +1,8 @@
 from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 
+
 PORT_NUMBER = 8080
+
 
 class MyHandler(BaseHTTPRequestHandler):
     
@@ -12,15 +14,14 @@ class MyHandler(BaseHTTPRequestHandler):
         self.wfile.write("Hello World !")
         return
 
+
 def run():
 
-    #Create a web server and define the handler to manage the
-    #incoming request
     server = HTTPServer(('', PORT_NUMBER), MyHandler)
-    print('Started httpserver on port %s' % PORT_NUMBER)
-    
-    #Wait forever for incoming htto requests
+    print('Serving at port:', PORT)
+   
     server.serve_forever()
+
 
 if __name__ == '__main__':
     run()

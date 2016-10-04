@@ -1,6 +1,6 @@
 FROM python:latest
 
-EXPOSE 8000
+EXPOSE 8080
 
 RUN mkdir -p /src/www
 

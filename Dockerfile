@@ -8,4 +8,3 @@ COPY web.py /src
 COPY index.html /src/www
 
 CMD cd /src/www; /bin/bash -c 'python3 -u /src/web.py'
-

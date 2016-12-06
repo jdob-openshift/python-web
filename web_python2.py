@@ -18,7 +18,7 @@ class MyHandler(BaseHTTPRequestHandler):
 def run():
 
     server = HTTPServer(('', PORT_NUMBER), MyHandler)
-    print('Serving at port:', PORT)
+    print('Serving at port:', PORT_NUMBER)
    
     server.serve_forever()
 

@@ -16,7 +16,7 @@ class SimpleHandler(http.server.BaseHTTPRequestHandler):
     s.send_header('Content-type', 'text/html')
     s.end_headers()
 
-    m = os.environ.get('TEXT', None) or 'Hello Tech Field Day'
+    m = os.environ.get('TEXT', None) or 'Hello World'
 
     s.wfile.write(m.encode('utf_8'))
 
